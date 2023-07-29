@@ -33,3 +33,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 `my-first-app --no-strict`
 
 `no routing and use default `
+
+using bootstrap css 3 (only store locally, installed into node_module/boostrap)
+`npm install --save bootstrap@3`
