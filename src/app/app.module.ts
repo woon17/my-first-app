@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 // @NgModule: The @NgModule decorator is used to define an Angular module.
 // It specifies the metadata for the module,
@@ -10,7 +11,8 @@ import { ServerComponent } from './server/server.component';
   // This property is an array that includes the components, directives, and pipes that belong to this module.
   declarations: [
     AppComponent,
-    ServerComponent
+    ServerComponent,
+    ServersComponent
   ],
   // This property is an array of other modules that this module depends on.
   // You can import modules from Angular's standard library or custom modules created in your application.

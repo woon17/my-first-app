@@ -36,3 +36,6 @@ or `ng new my-project --strict false`
 
 using bootstrap css 3 (only store locally, installed into node_module/boostrap)
 `npm install --save bootstrap@3`
+
+*.spec.ts is used for testing.
+generate component: `ng g c servers` 
