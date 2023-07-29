@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+// AppComponent is the root component
 export class AppComponent {
   // data binding. title and developer can be used in html
   title = 'my-first-app';
