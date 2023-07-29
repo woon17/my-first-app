@@ -3,7 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root', // used in index.html
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // styleUrls: ['./app.component.css']
+  styles: [`
+  h3 {
+    color: red;
+  }`]
+
 })
 // AppComponent is the root component
 export class AppComponent {
