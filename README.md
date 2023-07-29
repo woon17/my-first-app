@@ -30,6 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Section 1:
 `ng new my-first-app --no-strict`
 or `ng new my-project --strict false`
+(can set `strict: false` in your `tsconfig.json` file)
 
 `no routing and use default `
 
