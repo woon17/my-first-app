@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  // data binding. title and developer can be used in html
   title = 'my-first-app';
+  developer = 'shufa';
 }
