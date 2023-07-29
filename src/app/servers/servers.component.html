@@ -1,7 +1,11 @@
 <p>servers works!</p>
 <!-- <button class="btn btn-primary" disabled>add a server
     </button> -->
+<!--  cannot mix string interpolation and property binding together -->
+<!--  wrong expression: [disabled]="!{{allowNewServer}}" -->
 <button class="btn btn-primary" [disabled]="!allowNewServer">add a server
     </button>
+<p>{{allowNewServer}}</p>
+<p [innerText]="allowNewServer"></p>
 <app-server></app-server>
 <app-server></app-server>
