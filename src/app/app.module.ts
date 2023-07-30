@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { FormsModule } from '@angular/forms';
 
 // @NgModule: The @NgModule decorator is used to define an Angular module.
 // It specifies the metadata for the module,
@@ -17,7 +18,8 @@ import { ServersComponent } from './servers/servers.component';
   // This property is an array of other modules that this module depends on.
   // You can import modules from Angular's standard library or custom modules created in your application.
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   // This property is an array that includes the services that are available in the injector of this module.
   // Services added here are scoped to the module, meaning each instance of the service is unique within this module's context.

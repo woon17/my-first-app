@@ -5,6 +5,7 @@
 <!--  wrong expression: [disabled]="!{{allowNewServer}}" -->
 <label>ServerName</label>
 <input class="form-control" (input)="onUpdateSeverName($event)">
+<input class="form-control" [(ngModel)]="serverName">
 <button class="btn btn-primary " [disabled]="!allowNewServer " (click)="onCreateServer() ">add a server
 </button>
 <p>serverName: {{serverName}}</p>
