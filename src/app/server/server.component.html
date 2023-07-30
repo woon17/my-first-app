@@ -1,2 +1,4 @@
-<p>{{'Server'}} with ID {{serverId}} is {{serverStatus}}</p>
-<p>{{'Server'}} with ID {{serverId}} is {{getServerStatus()}}</p>
+<!-- <p>{{'Server'}} with ID {{serverId}} is {{serverStatus}}</p> -->
+<!-- [] means we want to bind something to the property of the directive
+we are binding backgroundColor properties of ngStyle -->
+<p [ngStyle]="{backgroundColor: getColor()}">{{'Server'}} with ID {{serverId}} is {{getServerStatus()}}</p>
