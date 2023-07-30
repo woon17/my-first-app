@@ -3,10 +3,13 @@
     </button> -->
 <!--  cannot mix string interpolation and property binding together -->
 <!--  wrong expression: [disabled]="!{{allowNewServer}}" -->
-<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">add a server
+<label>ServerName</label>
+<input class="form-control" (input)="onUpdateSeverName($event)">
+<button class="btn btn-primary " [disabled]="!allowNewServer " (click)="onCreateServer() ">add a server
 </button>
-<p>{{allowNewServer}}</p>
+<p>serverName: {{serverName}}</p>
+<p>allowNewServer: {{allowNewServer}}</p>
 <p>serverCreationStatus: {{serverCreationStatus}}</p>
-<p [innerText]="allowNewServer"></p>
+<!-- <p [innerText]="allowNewServer "></p> -->
 <app-server></app-server>
 <app-server></app-server>
