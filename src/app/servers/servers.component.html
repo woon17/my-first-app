@@ -15,6 +15,12 @@
 <!-- <p>Server was created, serverName is {{serverName}} </p> -->
 <!-- *ngIf is a structural directive, and the asterisk () is
   an important part of the syntax used to apply structural directives in templates -->
-<p *ngIf="serverCreated">Server was created, serverName is {{serverName}} </p>
+<p *ngIf="serverCreated; else noServer">Server was created, serverName is {{serverName}} </p>
+<!-- The ng-template is a non-rendered element, meaning it does not produce any output in the DOM by itself.
+  It acts as a container for content that can be stamped out when needed using Angular structural directives like *ngIf, *ngFor, or *ngSwitch. -->
+<!-- #noContent refers to the template reference variable  -->
+<ng-template #noServer>
+  <p>No server was created</p>
+</ng-template>
 <app-server></app-server>
 <app-server></app-server>
